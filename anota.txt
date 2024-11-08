@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2D1B4B; 
+  }
+  .img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20vh;
+   margin-top: -40px;
+}
+
+.img img {
+    max-width: 95%;
+    max-height: 100%;
+    object-fit: contain;
+    padding-top: -60%;
+  }
+
+  .h1-container h1 {
+    color: rgba(255, 255, 255, 0.68);
+    margin-bottom: 50px;
+    margin-top: -60px;
+    font-size: 27px;
+    letter-spacing: 2px;
+    max-width: 100%;
+  }
+
+  /* "Formulario" */
+  .container {
+    background-color: #3C2D5C;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 530px;
+    text-align: center;
+  }
+  
+  /*Usuario e senha*/ /*MEXENDO QUII!!! MARGIN BOTTOM 23PX*/
+  .input-container {
+    position: relative;
+    margin-bottom: 23px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 11px 50px 11px 11px; 
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #34224C;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  
+  .input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .input-container img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+  }
+
+ /*TO MXENDO AQUIII111*/
+.lempreme-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    color: #ffffff;
+    margin-top: -125px;
+    border: none;
+    letter-spacing: 2.1px;
+    text-decoration: none;
+    margin-left: 12px;
+    margin-bottom: -30px;
+}
+.lempreme-container label input{
+   margin-right: 11px;
+   padding: 12px;
+}
+
+  button[type="submit"] {
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 70%;
+    border-radius: 18px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 1em;
+    margin-top: 50px;
+
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #28a828;
+  }
+  
+  /*links!! Cadastre-se e esqueci-senha*/
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link-container a {
+    color: rgba(255, 255, 255, 0.747);
+    text-decoration: none;
+    font-size: 25px;
+    margin-bottom: -9em;
+    margin-top: 200px;
+    letter-spacing: -2px;
+    margin-right: -12px;
+    margin-left: 12px;
+  }
+  
+  .link-container a:hover {
+    text-decoration: underline;
+  }
+  /*Faz que esse bixo seja fixo mesmo que a tela fique pequena*/
+  @media (max-width: 400px) {
+    .container {
+      width: 100%;
+      padding: 20px;
+    }
+  } 
+
+
+  -----------------------------------------------------------------------------------
+  HTML CHECKBOX:
+  <div class="lempreme-container">
+        <label><input type="checkbox">LEMBRE ME</label>
+      </div>
+
+      CSS CHECKBOX:.lempreme-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  letter-spacing: 2.1px;
+  text-decoration: none;
+  margin-left: 9px;
+  margin-top: -120px;
+  padding: 10px 10px 10px 10px;
+}
+
+.lempreme-container label{
+  color: ffffff;
+  letter-spacing: 2px;
+}
+ 

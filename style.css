@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2D1B4B; 
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-top: -40px;
+}
+
+.img img {
+  max-width: 95%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.h1-container h1 {
+  color: rgba(255, 255, 255, 0.68);
+  margin-bottom: 50px;
+  margin-top: -30px;
+  font-size: 2em !important;
+  letter-spacing: 3px;
+  max-width: 100%;
+}
+
+/* Formulario */
+.container {
+  background-color: #3C2D5C;
+  padding: 4rem; /* Unidades flexíveis */
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Preenche 100% da largura */
+  max-width: 500px;
+  height: 520px;
+  text-align: center;
+}
+
+/* Usuario e senha */
+.input-container {
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 1rem; 
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #34224C;
+  color: white;
+  font-size: 1rem; /* Use rem */
+  letter-spacing: 3px;
+}
+
+.input-container img {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+/*TO MEXENDO MUITO AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII*/
+.lempreme-container label {
+  color: #ffffff;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  border: none;
+  text-decoration: none;
+  margin-left: 9px;
+  margin-top: -120px;
+  padding: 10px 10px 10px 10px;
+}
+
+.lempreme-container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+ 
+}
+
+.checkmark {
+  position: absolute;
+  top: 20;
+  left: 20;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border: 1px solid #b81313;
+}
+
+.lempreme-container input[type="checkbox"]:checked + .checkmark {
+  background-color: #32CD32;
+}
+
+
+/* Verifique se alguma dessas regras está sendo aplicada ao seu checkbox */
+
+.lempreme-container input[type="checkbox"] {
+  display: none; /* Isso tornaria o checkbox invisível */
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
+}
+
+button[type="submit"] {
+  background-color: #32CD32;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 70%;
+  border-radius: 18px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+button[type="submit"]:hover {
+  background-color: #28a828;
+}
+
+/* Links */
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-container a {
+  color: rgba(255, 255, 255, 0.8); 
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin: 8px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -100px;
+  margin-top: 80px;
+  cursor: pointer; 
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+  color: #3ce93c; 
+}
+.link-container input{
+  background: #28a828;
+}
+
+/* Responsividade */
+
+/* Para smartphones */
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .h1-container h1 {
+    font-size: 1.5rem;
+  }
+
+  button[type="submit"] {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+
+/* Para tablets */
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+
+  .h1-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsividade Tv */
+@media (min-width: 1200px) {
+  .container {
+    width: 40%;
+    padding: 4rem;
+  }
+
+  .h1-container h1 {
+    font-size: 3rem;
+  }
+
+  button[type="submit"] {
+    width: 60%;
+  }
+}
